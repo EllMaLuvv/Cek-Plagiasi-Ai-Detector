@@ -43,19 +43,19 @@ npm start       # jalankan build produksi
 npm run lint    # ESLint
 ```
 
-## Struktur
+## Struct
 
 ```
 src/
 ├── app/
-│   ├── page.tsx              # halaman utama (server component)
+│   ├── page.tsx              # (server component)
 │   ├── layout.tsx
 │   └── api/
-│       ├── extract/route.ts  # ekstraksi teks PDF/DOCX/TXT
+│       ├── extract/route.ts  # ekstract
 │       └── check/route.ts    # submit + polling hasil Quetext
 ├── components/
-│   ├── Checker.tsx           # UI input, progres, alur pemeriksaan
-│   └── Results.tsx           # panel skor, sumber, sorotan, deteksi AI
+│   ├── Checker.tsx           # UI input, progres
+│   └── Results.tsx           # panel score, source, sorotan, deteksi AI
 └── lib/
     ├── quetext.ts            # klien Quetext API + penanganan error
     └── types.ts              # tipe bersama
