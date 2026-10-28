@@ -1,28 +1,28 @@
 # 🛡️ Cek Plagiasi Karya Ilmiah
 
 Aplikasi web untuk mendeteksi **plagiarisme** dan **tulisan AI** pada karya ilmiah.
-Ditenagai [Quetext API v2](https://www.quetext.com/developers-api) (plagiarism + AI detection dalam satu API key).
+Dengan Bantuan [Quetext v2](https://www.quetext.com/developers-api) (plagiarism + AI detection dalam satu API key).
 
 ## Fitur
 
-- 📎 Unggah file **PDF**, **DOCX**, **TXT/MD** (teks diekstrak otomatis di server)
-- 📝 Atau langsung **tempel teks**
+- 📎 Upload file **PDF**, **DOCX**, **TXT/MD**
+- 📝 Atau langsung Paste Text
 - 🔎 Cek plagiarisme: skor kemiripan, daftar sumber + URL, sorotan otomatis pada naskah
 - 🤖 Deteksi AI: skor keseluruhan, ringkasan, dan probabilitas per kalimat
 - 💰 Estimasi biaya kata terhadap kuota gratis 5.000 kata
 
-## Persiapan (sekali saja)
+## Persiapan
 
 1. Daftar gratis tanpa kartu kredit: <https://www.quetext.com/signup> → dapat **5.000 kata**
    ($0,10 / 1.000 kata setelah kuota habis).
-2. Buka **Account → API Keys**, buat key baru, salin nilainya.
+2. Buka **Account → API Keys**, buat apikey baru, copy.
 3. Isi file `.env.local` di folder ini:
 
    ```env
-   QUETEXT_API_KEY=kunci_anda
+   QUETEXT_API_KEY=kunci_kamu
    ```
 
-4. Jalankan aplikasi (lihat di bawah).
+4. Jalankan aplikasi.
 
 Tanpa API key, aplikasi tetap terbuka dan menampilkan panduan pengaturan.
 
@@ -35,7 +35,7 @@ npm run dev
 
 Buka <http://localhost:3000>.
 
-## Perintah lain
+## Command
 
 ```bash
 npm run build   # build produksi
